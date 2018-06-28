@@ -195,3 +195,28 @@ th    { color: #fff; font-size: 80%; font-weight: bold; background-color: #9c0; 
 li {color:#333;
 padding-left:10px;
 }
+
+.teacher {
+	display: flex;
+}
+
+.teacher .picture {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.teacher img {
+	border: solid thick #c69;
+	width: 185px;
+	height: 240px;
+	margin: 14px 10px;
+}
+
+.teacher .bio {
+	flex: 2;
+}
+
+.teacher .bio p {
+	text-align: justify;
+}
