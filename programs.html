@@ -25,7 +25,9 @@
 				'event_label': url,
 				'transport_type': 'beacon',
 				'event_callback': function(){
-					window.open(url, '_blank');
+					document.location = url;
+					// Causes a "popup blocked" message on Chrome:
+					// window.open(url, '_blank');
 				}
 			});
 		}
