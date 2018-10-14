@@ -11,6 +11,21 @@
 
 		gtag('config', 'UA-41891145-3');
 	</script>
+
+	<script>
+		/**
+		* Function that tracks a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var trackRegistrationLinkClick = function(url) {
+		   ga('send', 'event', 'registration', 'click', url, {
+			 'transport': 'beacon',
+			 'hitCallback': function(){document.location = url;}
+		   });
+		}
+	</script>
 	
 	<meta content="Adobe GoLive" name="generator" />
 	<title></title>
@@ -39,7 +54,7 @@ ottawa, on K2A 1Z6<br />
 <h2>registration details</h2>
 
 <div style="margin: 24px 0 30px 40px; font-weight: bold">
-	<span style="font-size: 200%;"><a target="_blank" href="https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51">Register here</a></span> for the 2018/2019 school year with our online registration form!
+	<span style="font-size: 200%;"><a target="_blank" href="https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51" onclick="trackRegistrationLinkClick('https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51'); return false;">Register here</a></span> for the 2018/2019 school year with our online registration form!
 </div>
 
 <p>Have a question or comment? <a href="contact.html">Contact us</a></p>
