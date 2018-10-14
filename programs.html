@@ -25,7 +25,7 @@
 				'event_label': url,
 				'transport_type': 'beacon',
 				'event_callback': function(){
-					document.location = url;
+					window.open(url, '_blank');
 				}
 			});
 		}
