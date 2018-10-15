@@ -26,7 +26,8 @@
 				'event_label': url,
 				'transport_type': 'beacon',
 				'event_callback': function(){
-					document.location = url;
+					// No longer need to set location manually, since we're opening a new tab
+					// document.location = url;
 					// Causes a "popup blocked" message on Chrome:
 					// window.open(url, '_blank');
 				}
@@ -61,7 +62,7 @@ ottawa, on K2A 1Z6<br />
 <h2>registration details</h2>
 
 <div style="margin: 24px 0 30px 40px; font-weight: bold">
-	<span style="font-size: 200%;"><a target="_blank" href="https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51" onclick="trackRegistrationLinkClick('https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51'); return false;">Register here</a></span> for the 2018/2019 school year with our online registration form!
+	<span style="font-size: 200%;"><a target="_blank" href="https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51" onclick="trackRegistrationLinkClick('https://register.runsandbox.com/?form=86702033-a050-40ff-ab9d-f8ae207d9c51');">Register here</a></span> for the 2018/2019 school year with our online registration form!
 </div>
 
 <p>Have a question or comment? <a href="contact.html">Contact us</a></p>
