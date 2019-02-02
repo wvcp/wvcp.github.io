@@ -1,5 +1,6 @@
 # wvcp.github.io
-WVCP website
+
+WVCP website.
 
 ## Python HTTP server (OS X)
 
