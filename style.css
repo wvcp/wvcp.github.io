@@ -341,7 +341,6 @@ h3 {
 }
 td {
   color: #fff;
-  font-size: 80%;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -351,7 +350,6 @@ td {
   height: 100%;
   border-style: none;
   border-width: thin medium;
-  border-color: ;
 }
 table {
   margin-left: 0.25em;
@@ -359,7 +357,6 @@ table {
 }
 th {
   color: #fff;
-  font-size: 80%;
   font-weight: bold;
   background-color: #9c0;
   padding: 1px;
@@ -400,4 +397,23 @@ img.right {
 
 .teacher .bio p {
   text-align: justify;
+}
+
+.Table--programs,
+.Table--addOns {
+  width: 98%;
+}
+
+.Table--programs th,
+.Table--addOns th {
+  color: black;
+  padding: 5px;
+}
+
+.Table--programs th {
+  background-color: #c8d9ee;
+}
+
+.Table--addOns th {
+  background-color: #cac1d7;
 }
